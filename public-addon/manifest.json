@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "{{APPNAME}}",
+  "description": "{{APPDESC}}",
+  "version": "{{APPVERSION}}",
+
+  "permissions": [
+    "<all_urls>",
+    "tabs",
+    "bookmarks"
+  ],
+
+  "browser_action": {
+    "default_icon": "chrome-icon.png",
+    "default_popup": "index.html"
+  }
+}

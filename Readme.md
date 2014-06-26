@@ -7,6 +7,9 @@ A toolkit for building ambitious chrome extensions
 Chrome will complain if you define script tags inside your popup.html (index.html) this allows app initialization to occur in an external file. It also adds a few helpers and a method to ensure your chrome extension is always sized to your ember app size after dom updates.
 
 
+A manifest.json will automatically be generated, if you needer finer grain control, you can override the default by adding a manifest.json file under `public/` the default icon path is `chrome-icon.png` which can just be placed under `public/`
+
+
 ## Installation
 `npm install --save-dev ember-cli-chrome`
 
