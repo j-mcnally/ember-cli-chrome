@@ -1,11 +1,17 @@
 {
   "name": "ember-cli-chrome",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "ember-addon-main": "lib/chrome-app.js",
   "keywords": [
     "ember-addon"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/j-mcnally/ember-cli-chrome.git"
+  },
+  "author": "Justin McNally",
+  "license": "MIT",
   "dependencies": {
     "ember-cli": "0.0.37",
     "broccoli-merge-trees": "^0.1.4",
