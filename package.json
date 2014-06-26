@@ -1,0 +1,15 @@
+{
+  "name": "ember-cli-chrome",
+  "version": "0.0.1",
+  "private": true,
+  "ember-addon-main": "lib/chrome-app.js",
+  "keywords": [
+    "ember-addon"
+  ],
+  "dependencies": {
+    "ember-cli": "0.0.37",
+    "broccoli-merge-trees": "^0.1.4",
+    "broccoli-static-compiler": "^0.1.4",
+    "broccoli-replace": "^0.1.7"
+  }
+}
