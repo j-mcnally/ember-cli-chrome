@@ -4,7 +4,9 @@
   "name": "{{APPNAME}}",
   "description": "{{APPDESC}}",
   "version": "{{APPVERSION}}",
-
+  "icons": {
+    "128": "chrome-icon-lg.png"
+  },
   "permissions": [
     "<all_urls>",
     "tabs",
