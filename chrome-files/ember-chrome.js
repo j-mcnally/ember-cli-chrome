@@ -1,9 +1,3 @@
-window.{{NAMESPACE}}ENV = {{ENV}};
-window.EmberENV = window.{{NAMESPACE}}ENV.EmberENV;
-window.ENV = window.{{NAMESPACE}}ENV; // Legacy support remove when all plugins are up to date.
-
-
-
 // Ensure our window is always the size of our dom.
 
 var windowSizeTimer = null;
@@ -38,7 +32,9 @@ function loadScript(src, callback)
     if ( !r && (!this.readyState || this.readyState == 'complete') )
     {
       r = true;
-      callback();
+      if (callback) {
+        callback();
+      }
     }
   };
   t = document.getElementsByTagName('body')[0];
@@ -46,9 +42,5 @@ function loadScript(src, callback)
 }
 
 loadScript("assets/vendor.js", function() {
-  loadScript("assets/{{APPNAME}}.js", function() {
-    var appView = require('{{APPNAME}}/views/application')['default'];
-    appView.prototype.classNames = ['chromeApp'];
-    window.{{NAMESPACE}} = require('{{APPNAME}}/app')['default'].create({{NAMESPACE}}ENV.APP);
-  });
-});
+  loadScript("assets/{{APPNAME}}.js");
+})

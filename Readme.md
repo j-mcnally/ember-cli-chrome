@@ -17,6 +17,11 @@ Remove all script tags and add
 
 `<script src="ember-chrome.js"></script>`
 
+You need to set the location type to hash in `config/environment.js` of your project
+
+`locationType: 'hash',`
+
+
 ## Demo
 
 [Ember Chrome Demo](https://github.com/j-mcnally/ember-chrome-demo)

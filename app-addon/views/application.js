@@ -1,3 +1,5 @@
-import Ember from 'ember';
+var ApplicationView = Ember.View.create({
+  classNames: ['chromeApp']
+});
 
-export default Ember.View.extend();
+export default ApplicationView;
