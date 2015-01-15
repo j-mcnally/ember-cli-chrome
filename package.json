@@ -13,7 +13,7 @@
   "author": "Justin McNally",
   "license": "MIT",
   "dependencies": {
-    "ember-cli": "^0.1.0",
+    "ember-cli": "git://github.com/j-mcnally/ember-cli.git#v39",
     "broccoli-merge-trees": "^0.1.4",
     "broccoli-static-compiler": "^0.1.4",
     "broccoli-replace": "^0.1.7"
