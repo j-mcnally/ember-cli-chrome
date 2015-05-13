@@ -3,6 +3,7 @@
   "version": "0.0.5",
   "private": false,
   "ember-addon": {"main": "lib/chrome-app.js"},
+  "main": "lib/chrome-app.js",
   "keywords": [
     "ember-addon"
   ],
@@ -13,9 +14,9 @@
   "author": "Justin McNally",
   "license": "MIT",
   "dependencies": {
-    "ember-cli": "git://github.com/j-mcnally/ember-cli.git#v39",
-    "broccoli-merge-trees": "^0.1.4",
-    "broccoli-static-compiler": "^0.1.4",
-    "broccoli-replace": "^0.1.7"
+    "ember-cli": "^0.2.3",
+    "broccoli-merge-trees": "^0.2.1",
+    "broccoli-static-compiler": "^0.2.1",
+    "broccoli-replace": "^0.3.1"
   }
 }
