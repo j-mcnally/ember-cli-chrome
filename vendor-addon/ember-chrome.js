@@ -16,31 +16,3 @@ document.addEventListener('DOMSubtreeModified', function() {
       windowSizeTimer = null;
     }, 100);
 });
-
-
-function loadScript(src, callback)
-{
-  var s,
-      r,
-      t;
-  r = false;
-  s = document.createElement('script');
-  s.type = 'text/javascript';
-  s.src = src;
-  s.onload = s.onreadystatechange = function() {
-    //console.log( this.readyState ); //uncomment this line to see which ready states are called.
-    if ( !r && (!this.readyState || this.readyState == 'complete') )
-    {
-      r = true;
-      if (callback) {
-        callback();
-      }
-    }
-  };
-  t = document.getElementsByTagName('body')[0];
-  t.appendChild(s);
-}
-
-loadScript("assets/vendor.js", function() {
-  loadScript("assets/{{APPNAME}}.js");
-})

@@ -2,8 +2,7 @@
   "name": "ember-cli-chrome",
   "version": "0.0.5",
   "private": false,
-  "ember-addon": {"main": "lib/chrome-app.js"},
-  "main": "lib/chrome-app.js",
+  "ember-addon": {},
   "keywords": [
     "ember-addon"
   ],
