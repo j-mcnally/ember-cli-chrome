@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-chrome",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": false,
   "ember-addon": {},
   "keywords": [
@@ -13,7 +13,7 @@
   "author": "Justin McNally",
   "license": "MIT",
   "dependencies": {
-    "ember-cli": "^0.2.4",
+    "ember-cli": "^0.2.7",
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-funnel": "^0.2.3",
     "broccoli-replace": "^0.3.1"
