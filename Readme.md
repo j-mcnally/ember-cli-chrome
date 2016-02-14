@@ -1,21 +1,23 @@
-# Ember-cli-chrome
+# supertree-chrome-extension
 
-A toolkit for building ambitious chrome extensions
+A toolkit for building embedded chrome extensions 
 
 
 ## General Info
-Adds a few helpers and a method to ensure your chrome extension is always sized to your ember app size after dom updates.
 
+This does not work for generic repos, it currently works only with supertree clients.
 
-A manifest.json will automatically be generated, if you needer finer grain control, you can override the default by adding a manifest.json file under `public/` the default icon paths are `chrome-icon-lg.png` and `chrome-icon.png` which can just be placed under `public/`
+You will most likely need to install `https://github.com/xcambar/ember-cli-embedded` and enable `ember-export-application-global` by 
+adding `exportApplicationGlobal: 'MyApp',` to `environment.js` (your repo).
+
+Change `SupertreeChrome` in `insert.js` (this repo) to be the name of you app that you are exporting.
+Set a rootElement for your app in `app.js` (your repo) and replace `supertree-chrome-extension` with the rootElement of your ember-cli app.
 
 
 ## Installation
-`ember install ember-cli-chrome`
-
-## Demo
+`ember install supertree-chrome-extension`
 
 
-## TODO
-
-- Wrap common chrome api calls with promise layer.
+## Thanks
+99% of this repo came from ember-cli-chrome
+https://github.com/j-mcnally/ember-cli-chrome
