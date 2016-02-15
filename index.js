@@ -28,6 +28,6 @@ module.exports = {
     this.app = app;
     utilities.disableFingerPrints(app);
     utilities.addChromeHelper(app);
-    utilities.forceHashLocation(app);
+    utilities.forceNoneLocation(app);
   },
 };
