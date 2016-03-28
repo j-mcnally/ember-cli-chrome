@@ -1,6 +1,6 @@
 {
-  "name": "ember-cli-chrome",
-  "version": "0.0.8",
+  "name": "supertree-chrome-extension",
+  "version": "0.0.3",
   "private": false,
   "ember-addon": {},
   "keywords": [
@@ -8,14 +8,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/j-mcnally/ember-cli-chrome.git"
+    "url": "git://github.com/supertreeteam/supertree-chrome-extension.git"
   },
-  "author": "Justin McNally",
+  "author": "Lachlan Priest",
   "license": "MIT",
   "dependencies": {
-    "ember-cli": "^0.2.7",
-    "broccoli-merge-trees": "^0.2.1",
-    "broccoli-funnel": "^0.2.3",
-    "broccoli-replace": "^0.3.1"
-  }
+    "ember-cli": "^1.13.15",
+    "broccoli-merge-trees": "^1.1.1",
+    "broccoli-funnel": "^1.0.1",
+    "broccoli-replace": "^0.11.0"
+  },
+  "description": "A toolkit for building embedded chrome extensions",
+  "bugs": {
+    "url": "https://github.com/supertreeteam/supertree-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/supertreeteam/supertree-chrome-extension#readme",
+  "main": "index.js"
 }
